@@ -1,0 +1,52 @@
+{
+  // Use IntelliSense to learn about possible Node.js debug attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "TEST - Command - Create (not found)",
+      "program": "${workspaceRoot}/bin.js",
+      "cwd": "${workspaceRoot}/test",
+      "args": [
+        "create",
+        "test-module"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "TEST - Command - Create (no files)",
+      "program": "${workspaceRoot}/bin.js",
+      "cwd": "${workspaceRoot}/test",
+      "args": [
+        "create",
+        "no-files"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "TEST - Command - Create (component)",
+      "program": "${workspaceRoot}/bin.js",
+      "cwd": "${workspaceRoot}/test",
+      "args": [
+        "create",
+        "component",
+        "App"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "TEST - Command - List",
+      "program": "${workspaceRoot}/bin.js",
+      "cwd": "${workspaceRoot}/test",
+      "args": [
+        "list"
+      ]
+    }
+  ]
+}
