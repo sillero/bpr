@@ -12,7 +12,8 @@
       "cwd": "${workspaceRoot}/test",
       "args": [
         "create",
-        "test-module"
+        "test-module",
+        "test"
       ]
     },
     {
@@ -23,7 +24,20 @@
       "cwd": "${workspaceRoot}/test",
       "args": [
         "create",
-        "no-files"
+        "no-files",
+        "test"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "TEST - Command - Create (only files)",
+      "program": "${workspaceRoot}/bin.js",
+      "cwd": "${workspaceRoot}/test",
+      "args": [
+        "create",
+        "only-files",
+        "test"
       ]
     },
     {

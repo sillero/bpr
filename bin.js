@@ -13,12 +13,24 @@ console.log('CWD:', CWD)
 console.log('Action:', COMMAND, BLUEPRINT, NAME)
 
 switch(COMMAND) {
+  case 'c':
   case 'create':
     create(CWD, BLUEPRINT, NAME)
     break
+
+  case 'l':
+  case 'ls':
   case 'list':
     list(CWD)
     break
+
+  case 'd':
+  case 'del':
+  case 'delete':
+    // ONLY DELETE FILES
+    /// delete(CWD, BLUEPRINT, NAME)
+    break
+
   default:
     help(CWD)
 }
